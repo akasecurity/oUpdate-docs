@@ -1,0 +1,68 @@
+site_name: oUpdate
+site_description: An open-source package firewall that reads what each new release changed before it lands
+site_url: !ENV [DOCS_SITE_URL, 'https://akasecurity.github.io/oUpdate-docs/']
+repo_name: akasecurity/oUpdate
+repo_url: https://github.com/akasecurity/oUpdate
+docs_dir: docs
+site_dir: site
+
+theme:
+  name: material
+  font: false
+  logo: assets/icon-white.svg
+  favicon: assets/logomark.svg
+  palette:
+    - media: '(prefers-color-scheme: light)'
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: '(prefers-color-scheme: dark)'
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.footer
+    - content.code.copy
+    - search.suggest
+    - search.highlight
+    - toc.follow
+
+markdown_extensions:
+  - admonition
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - tables
+  - attr_list
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+
+extra_css:
+  - stylesheets/base.css
+  - stylesheets/e.css
+
+extra:
+  social:
+    - icon: material/web
+      link: https://akasecurity.io
+      name: akasecurity.io
+    - icon: fontawesome/brands/github
+      link: https://github.com/akasecurity
+      name: GitHub
+
+nav:
+  - Home: index.md
+  - Install: install.md
+  - Gate update PRs: gate.md
+  - Host apply: host.md

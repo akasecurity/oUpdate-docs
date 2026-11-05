@@ -1,0 +1,11 @@
+# oUpdate docs
+
+> oUpdate is an open-source package firewall that reviews each new package release before it lands. Source: https://github.com/akasecurity/oUpdate.
+
+AKA Security is a security engineering company. Company site: https://akasecurity.io.
+
+## Pages
+- [Home](https://akasecurity.github.io/oUpdate-docs/): What oUpdate is and what it covers.
+- [Install](https://akasecurity.github.io/oUpdate-docs/install/): Install and set up with your agent.
+- [Gate update PRs](https://akasecurity.github.io/oUpdate-docs/gate/): Gate dependency-update pull requests on a forge.
+- [Host apply](https://akasecurity.github.io/oUpdate-docs/host/): Review and apply updates on a Mac.
