@@ -1,4 +1,36 @@
-# oUpdate
+---
+hide:
+  - navigation
+  - toc
+---
+
+<div class="aka-hero" markdown>
+<span class="eyebrow">Package firewall</span>
+
+# Read what changed before it lands.
+
+oUpdate reads each new release's diff and holds anything that looks like an attack. It runs on your Mac and in your repositories.
+
+<div class="aka-cta" markdown>
+[Install](install.md){ .md-button .md-button--primary }
+[GitHub](https://github.com/akasecurity/oUpdate){ .md-button }
+</div>
+</div>
+
+<div class="aka-facts" markdown>
+<div markdown>
+### One release
+Review a single npm or PyPI release on demand with `oupdate review`.
+</div>
+<div markdown>
+### Update PRs
+Gate dependency-update pull requests in your repos with `oupdate gate`.
+</div>
+<div markdown>
+### Your Mac
+Check Homebrew and global npm updates with `oupdate host --apply`.
+</div>
+</div>
 
 oUpdate is an open-source package firewall that reads what each new release changed before it lands. Deterministic checks look for known attack patterns, such as install scripts, Python startup hooks and encoded payloads, and a model you choose (a local model you run, or a cloud one) reads the rest of the diff. On a Mac it handles Homebrew and npm updates; in your repositories it gates dependency-update pull requests with a cooldown, the same review and a commit status your own gate can act on. It is tested against real supply-chain attacks without any threat feeds or advisories.
 
