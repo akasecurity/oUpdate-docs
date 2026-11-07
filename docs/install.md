@@ -27,6 +27,7 @@ Set up oUpdate (https://github.com/akasecurity/oUpdate) on this machine for me. 
 ```
 
 [AGENTS.md](https://github.com/akasecurity/oUpdate/blob/main/AGENTS.md) gives the agent the order to work in:
+
 - what you want oUpdate for;
 - prerequisites, then the install;
 - a local or hosted reviewer model, checked on a known-clean update;
